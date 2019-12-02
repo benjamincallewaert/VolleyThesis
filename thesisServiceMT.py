@@ -81,7 +81,7 @@ def updateTestDate(df,belgium):
                     testData_df.loc[len(testData_df)]=[0,0]
 
 def handleBelgiumFile(filename):
-    pathname = str("C:\\Users\\calle\\PycharmProjects\\paper\\venv\\data\\") + filename
+    pathname = str("data\\") + filename
     f=open(pathname, "r" , encoding="utf8")
     filedata=f.read().split("[3SCOUT]")[1]
     file=open("matchdata.txt","w")
